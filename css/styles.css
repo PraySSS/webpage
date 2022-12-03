@@ -23,6 +23,15 @@
   filter: blur(0);
   transform: translateX(0);
 }
+.col:nth-child(2) {
+  transition-delay: 200ms;
+}
+.col:nth-child(3) {
+  transition-delay: 400ms;
+}
+.col:nth-child(4) {
+  transition-delay: 600ms;
+}
 /*  Image settint */
 .logoImg {
   width: 200px;
