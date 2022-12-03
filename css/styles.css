@@ -14,14 +14,10 @@
 /* scroll animation */
 .hidden {
   opacity: 0;
-  filter: blur(10px);
-  transform: translateX(-50%);
   transition: all 1s;
 }
 .show {
   opacity: 1;
-  filter: blur(0);
-  transform: translateX(0);
 }
 .col:nth-child(2) {
   transition-delay: 200ms;
@@ -2925,7 +2921,9 @@ textarea.form-control-lg {
   border-bottom-right-radius: 0;
 }
 .input-group
-  > :not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback) {
+  > :not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(
+    .valid-feedback
+  ):not(.invalid-tooltip):not(.invalid-feedback) {
   margin-left: -1px;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
